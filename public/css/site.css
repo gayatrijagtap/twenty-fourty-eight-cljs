@@ -1,0 +1,102 @@
+body {
+  font-family: 'Helvetica Neue', Verdana, Helvetica, Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 72px;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.125em;
+  color: #333;
+  line-height: 1.5em;
+}
+
+h1, h2, h3 {
+  color: #000;
+}
+h1 {
+  font-size: 2.5em
+}
+
+h2 {
+  font-size: 2em
+}
+
+h3 {
+  font-size: 1.5em
+}
+
+a {
+  text-decoration: none;
+  color: #09f;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.row {
+  display: flex;
+}
+
+.board {
+  border: 5px solid #f6eedf;
+  height: 520px;
+  width: 520px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.cell {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  border-radius: 5px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.game-over {
+  height: 520px;
+  width: 520px;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6eedf;
+  color: #776e65;
+  -webkit-animation: fadein 2s;
+}
+
+.play-again {
+  height: 65px;
+  width: 250px;
+  font-size: 40px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 50px;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  background-color: #f59563;
+  color: #f9f6f2;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.play-again:hover {
+  opacity: 1;
+  cursor: pointer;
+}
