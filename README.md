@@ -1,3 +1,8 @@
+### To play
+https://gayatrijagtap.github.io/twenty-fourty-eight-cljs/
+
+
+
 
 ### Development mode
 To start the Figwheel compiler, navigate to the project folder and run the following command in the terminal:
